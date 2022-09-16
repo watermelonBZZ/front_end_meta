@@ -218,7 +218,7 @@ git reflog 重新得到版本号
 /filename.format
 
 2.4 在库中删除文件
-git rm -chached filename.format
+git rm -cached filename.format
 (需要忽略的文件如果已经存在于库中，应该先删除，然后再编辑.gitignore规则，接着add、commit)
 
 2.5
