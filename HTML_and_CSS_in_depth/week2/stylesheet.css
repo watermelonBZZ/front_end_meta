@@ -1,0 +1,60 @@
+.parent {
+    width: 800px;
+    background-color: pink;
+    margin: 200px auto;
+}
+
+h1 {
+    font-size: 60px;
+    transform: rotate(0deg);
+
+}
+
+h1:hover {
+    transform: rotate(20deg);
+}
+
+h1 {
+    transition: transform 2s;
+}
+
+.box {
+    position: relative;
+    display: grid;
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: green;
+    border-radius: 12px;
+    animation: mymove 5s infinite;
+    -webkit-animation: mymove 1s infinite;
+}
+
+
+/*  */
+@keyframes mymove {
+    0% {
+        top: 0px;
+        background: red
+    }
+
+    10% {
+        top: 100px;
+        background: yellow
+    }
+}
+
+@-webkit-keyframes mymove
+
+/* Safari and Chrome */
+    {
+    0% {
+        top: 0px;
+        background: red
+    }
+
+    25% {
+        top: 200px;
+        background: yellow
+    }
+}
